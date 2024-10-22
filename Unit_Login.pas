@@ -70,7 +70,10 @@ begin
  SubTitle:= 'My WebApp';
 
  //Background color
- D2Bridge.HTML.Render.BodyStyle:= 'background-color: #f0f0f0;';
+  D2Bridge.HTML.Render.BodyStyle:= 'background-color: #f0f0f0;';
+
+  D2Bridge.HTML.StyleSheets.Add('<link rel="manifest" href="manifest.json">');
+
 
  //TemplateClassForm:= TD2BridgeFormTemplate;
  D2Bridge.FrameworkExportType.TemplateMasterHTMLFile:= '';
